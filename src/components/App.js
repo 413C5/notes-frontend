@@ -1,10 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Note from "./Note";
+import axios from "axios";
 
-const App = (props) => {
-    const [notes, setNotes] = useState(props.notes)
+const App = () => {
+    const [notes, setNotes] = useState([])
     const [newNote, setNewNote] = useState('')
     const [showAll, setShowAll] = useState(true)
+
+    useEffect(() => {
+        console.log('Entro al effect')
+        axios
+            .get('http://localhost:3001/notes')
+            .then(response => {
+                console.log('Entro al then')
+                setNotes(response.data)
+            })
+    }, [])
+
+    console.log('render', notes.length, 'notes')
 
     //const {notes}=props
     //console.log(notes)
@@ -41,8 +54,8 @@ const App = (props) => {
     return (
         <div>
             <h1>Notes</h1>
-            <button onClick={()=>setShowAll(!showAll)}>
-                show {showAll?'important':'all'}                
+            <button onClick={() => setShowAll(!showAll)}>
+                show {showAll ? 'important' : 'all'}
             </button>
             <ul>
                 {notesToShow.map((x) => {
