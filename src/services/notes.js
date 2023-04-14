@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = 'https://notes-server-tmma.onrender.com/api/notes'
+const url = '/api/notes'
 
 //Select
 
