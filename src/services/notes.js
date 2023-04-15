@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const url = 'https://notes-server-mongodb.onrender.com/api/notes'
+//const url = 'https://notes-server-mongodb.onrender.com/api/notes'
+const url = '/api/notes'
+
 
 //Select
 
