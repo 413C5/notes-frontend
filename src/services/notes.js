@@ -1,12 +1,11 @@
 import axios from "axios";
 
-//const url = 'https://notes-server-mongodb.onrender.com/api/notes'
 const url = '/api/notes'
 
 
 //Select
 
-//SI se quiere el getAll normal se comenta el NonExist y el .concat
+//If it is necessary to use normal getAll, it is necessary to comment NonExist and .concat
 const getAll = () => {
     const request = axios.get(url)
     const NonExist = {
