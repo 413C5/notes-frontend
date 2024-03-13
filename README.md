@@ -1,3 +1,11 @@
+# Notes App
+
+Notes is an app that lets users create, manage, and mark the importance of their notes. Users can add notes and use a button to signify whether a particular note holds significance. The application stores all notes in a MongoDB database.
+
+For insights into the backend of this app, please refer to [this link](https://studies.cs.helsinki.fi/restcountries/api/all).
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
