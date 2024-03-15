@@ -4,7 +4,9 @@ Notes is an app that lets users create, manage, and mark the importance of their
 
 For insights into the backend of this app, please refer to [this link](https://studies.cs.helsinki.fi/restcountries/api/all).
 
+# Try out this app:
 
+You can experience the app by clicking [this link](https://notes-ecqo.onrender.com).
 
 # Getting Started with Create React App
 
